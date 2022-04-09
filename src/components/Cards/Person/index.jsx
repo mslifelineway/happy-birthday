@@ -64,7 +64,7 @@ const Person = () => {
       <Dob>
         {dob} ({age} Yrs)
       </Dob>
-      <Author>- {author.name}</Author>
+      {/* <Author>- {author.name}</Author> */}
     </PersonCard>
   );
 };

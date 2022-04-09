@@ -16,7 +16,10 @@ const Birthday = () => {
 
   const RenderMainContent = () => {
     return (
-      <div className="main__content">
+      <div
+        className="main__content"
+        style={{ display: !isClicked ? "none" : "flex" }}
+      >
         {showAnimationScreen && (
           <div className="animated__container ">
             <img src={SliderImage} alt="candle" className="slide-top" />
@@ -59,7 +62,8 @@ const Birthday = () => {
     <div className="birthday dashboard__bg">
       <div className="bday__content">
         {!isClicked && <SliderScreen handleClick={handleClick} />}
-        {isClicked && <RenderMainContent />}
+        {/* {isClicked && <RenderMainContent />} */}
+        <RenderMainContent />
       </div>
     </div>
   );
